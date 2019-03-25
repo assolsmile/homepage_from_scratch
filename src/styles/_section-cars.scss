@@ -1,0 +1,211 @@
+@import 'variables';
+
+.section-title {
+  display: flex;
+  margin-top: 4.9rem;
+  margin-left: 10rem;
+}
+
+
+//
+// Section-cars
+//
+
+
+.section-cars {
+  .section-title {
+    img {
+      width: 2.5rem;
+      height: 3.2rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+.section-cars-cards {
+  padding: 3.2rem 8rem 0 10rem;
+}
+
+.slick-prev {
+  width: 5rem;
+  height: 5rem;
+  left: 40px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  @media only screen and (max-width: 1060px) {
+    left: 25px;
+  }
+}
+
+.slick-next {
+  width: 5rem;
+  height: 5rem;
+  right: 50px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  @media only screen and (max-width: 1060px) {
+    right: 30px;
+  }
+}
+
+.slick-prev:before {
+  content: "\2329";
+  color: black;
+  margin-right: 10px;
+}
+
+.slick-next:before {
+  content: "\232A";
+  color: black;
+  margin-left: 10px;
+}
+
+.card-car {
+  height: 45.2rem;
+  padding: 2rem;
+  border-radius: 2px;
+  border: solid 1px #efefef;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  margin-right: 3rem;
+
+
+  @media only screen and (max-width: 640px) {
+    width: 100%;
+    padding: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-car-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .car-brand {
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $black;
+    @media only screen and (max-width: 640px) {
+      font-size: 2rem;
+    }
+  }
+
+  .car-model {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #7f7f7f;
+    @media only screen and (max-width: 640px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .car-rating {
+    padding: 0.7rem 0.4rem;
+    border-radius: 5px;
+    background-color: #f1eade;
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+
+    :first-child {
+      text-decoration: underline;
+    }
+
+    .car-rating-value {
+      margin-top: 4px;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+
+  .car-img {
+    img {
+      width: 80%;
+      //height: 17.9rem;
+      margin: auto;
+      @media only screen and (max-width: 1138px) {
+        width: 26rem;
+        height: 17rem;
+      }
+    }
+  }
+
+  .card-car-description {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-top: 0.8rem;
+    @media only screen and (max-width: 640px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .card-car-description-sum {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 1.6rem;
+    @media only screen and (max-width: 640px) {
+      font-size: 1.8rem;
+    }
+
+    span {
+      color: #d0021b;
+    }
+  }
+
+  .card-car-description-offer {
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    @media only screen and (max-width: 640px) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+
+//
+// Section-brands-logos
+//
+
+
+.section-brands-logos {
+  margin: 3.3rem 10rem 0 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: 800px) {
+    justify-content: space-around;
+    margin: 2rem;
+  }
+
+  .brand-logo-bmw {
+    width: 11.4rem;
+  }
+
+  .brand-logo-ford {
+    width: 15rem;
+  }
+
+  .brand-logo-subaru {
+    width: 23.6rem;
+  }
+
+  .brand-logo-renault {
+    width: 12rem;
+  }
+
+  .brand-logo-toyota {
+    width: 12rem;
+  }
+
+}
+
+
+

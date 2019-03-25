@@ -1,0 +1,173 @@
+@import 'header';
+@import 'variables';
+@import 'section-hero';
+@import 'section-cars';
+@import 'section-m-offer';
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+
+  @media only screen and (max-width: 1060px) {
+    font-size: 8px;
+  }
+  @media only screen and (max-width: 640px) {
+    font-size: 7px;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+section, div, header, footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+p, h3, h5, h6 {
+  margin: 0;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+button {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  border: none;
+  color: $white;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-top-offers {
+  padding: 6rem 20rem 8rem 30rem;
+
+  @media only screen and (max-width: 1400px) {
+    padding: 8.2rem 10rem 8rem 10rem;
+  }
+
+  h5 {
+    margin-bottom: 2rem;
+  }
+
+  .section-top-offers-description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+  }
+
+  .check {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .car-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-top: 20px;
+
+    @media only screen and (max-width: 1200px) {
+      font-size: 1.8rem;
+      padding-top: 30px;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 1.5rem;
+      padding-top: 20px;
+    }
+  }
+
+  .line {
+    width: 50%;
+    border-bottom: 2px solid #9013fe;
+    position: relative;
+    top: -5px;
+
+    @media only screen and (max-width: 1200px) {
+      top: 0;
+    }
+
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .text-submit {
+    margin: 9.6rem 0 4.2rem 0;
+  }
+}
+
+.car-rating-top {
+  width: 7.7rem;
+  height: 4rem;
+  margin: 0 1.2rem 0 1.2rem;
+  padding: 1.2rem;
+  background-color: #f1eade;
+  letter-spacing: 0.03rem;
+
+  @media only screen and (max-width: 1200px) {
+    margin-top: 20px;
+  }
+
+  .car-rating-value-top {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}
+
+.btn-check-offer {
+  width: 13.7rem;
+  height: 4rem;
+  background-color: #3bb273;
+  border: solid 1px #979797;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: 0.05rem;
+
+  @media only screen and (max-width: 1200px) {
+    margin-top: 20px;
+  }
+}
