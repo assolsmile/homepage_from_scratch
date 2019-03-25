@@ -1,0 +1,477 @@
+header {
+  display: flex;
+  width: 100%;
+  height: 6.2rem;
+  padding: 2rem 10rem;
+  background-color: #ffffff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: black;
+  line-height: 1;
+  letter-spacing: 0.02rem; }
+  @media only screen and (max-width: 900px) {
+    header {
+      padding: 2rem 2rem;
+      font-size: 1.5rem; } }
+  header .logo img {
+    height: 1.7rem; }
+  header nav {
+    margin-left: auto; }
+    header nav a {
+      padding-right: 2rem;
+      color: black; }
+    @media only screen and (max-width: 640px) {
+      header nav {
+        display: none; } }
+  header .dropdown-profile {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; }
+  header .basket {
+    padding: 0 2.4rem;
+    border-right: 1px solid #e7e7e7; }
+    @media only screen and (max-width: 640px) {
+      header .basket {
+        margin-left: auto; } }
+    header .basket img {
+      width: 2.3rem; }
+  header .profile img {
+    padding-left: 2.4rem;
+    padding-right: 1rem;
+    width: 1.9rem; }
+  @media only screen and (max-width: 640px) {
+    header .profile .dropdown-profile-name, header .profile i {
+      display: none; } }
+  header .profile i {
+    font-size: 0.5em; }
+  header .profile .dropdown-profile-content {
+    display: none;
+    position: absolute;
+    left: -4px;
+    width: 233px;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+    header .profile .dropdown-profile-content .nav-item {
+      display: none; }
+    @media only screen and (max-width: 640px) {
+      header .profile .dropdown-profile-content {
+        width: 120px;
+        left: -85px;
+        margin-top: 0; }
+        header .profile .dropdown-profile-content .nav-item {
+          display: block; } }
+    header .profile .dropdown-profile-content li {
+      padding-bottom: 1.5rem;
+      font-weight: 300; }
+      header .profile .dropdown-profile-content li a {
+        color: black; }
+      header .profile .dropdown-profile-content li a:hover {
+        text-shadow: 0.3px 0.3px black; }
+
+.dropdown-profile-content-show {
+  display: block !important; }
+
+.section-hero {
+  height: 460px;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(public/assets/hero-img.png); }
+  .section-hero .section-hero-title {
+    margin-left: 9.7rem;
+    margin-top: 10.5rem; }
+    @media only screen and (max-width: 640px) {
+      .section-hero .section-hero-title {
+        margin-left: 0; } }
+    .section-hero .section-hero-title h1 {
+      font-size: 4rem;
+      color: #fff;
+      text-shadow: 1px 1px 1px rgba(214, 214, 214, 0.5);
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: 0.1rem;
+      margin-bottom: 5rem; }
+      @media only screen and (max-width: 640px) {
+        .section-hero .section-hero-title h1 {
+          margin-left: 2rem;
+          margin-right: 2rem; } }
+    .section-hero .section-hero-title p {
+      font-size: 2rem;
+      color: #fff;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: 0.1rem;
+      margin-bottom: 5rem; }
+      .section-hero .section-hero-title p span {
+        color: #fa4d53;
+        font-weight: 600; }
+    .section-hero .section-hero-title button {
+      width: 29.5rem;
+      height: 4.2rem; }
+    .section-hero .section-hero-title .btn-select {
+      background-color: #cfb995;
+      margin-right: 2rem; }
+      @media only screen and (max-width: 640px) {
+        .section-hero .section-hero-title .btn-select {
+          margin-right: 0;
+          margin-bottom: 2rem; } }
+    .section-hero .section-hero-title .btn-help {
+      background-color: transparent;
+      border: solid 1px #ffffff; }
+    @media only screen and (max-width: 640px) {
+      .section-hero .section-hero-title {
+        text-align: center; } }
+
+.section-title {
+  display: flex;
+  margin-top: 4.9rem;
+  margin-left: 10rem; }
+
+.section-cars .section-title img {
+  width: 2.5rem;
+  height: 3.2rem;
+  margin-right: 2rem; }
+
+.section-cars-cards {
+  padding: 3.2rem 8rem 0 10rem; }
+
+.slick-prev {
+  width: 5rem;
+  height: 5rem;
+  left: 40px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; }
+  @media only screen and (max-width: 1060px) {
+    .slick-prev {
+      left: 25px; } }
+
+.slick-next {
+  width: 5rem;
+  height: 5rem;
+  right: 50px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; }
+  @media only screen and (max-width: 1060px) {
+    .slick-next {
+      right: 30px; } }
+
+.slick-prev:before {
+  content: "\2329";
+  color: black;
+  margin-right: 10px; }
+
+.slick-next:before {
+  content: "\232A";
+  color: black;
+  margin-left: 10px; }
+
+.card-car {
+  height: 45.2rem;
+  padding: 2rem;
+  border-radius: 2px;
+  border: solid 1px #efefef;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  margin-right: 3rem; }
+  @media only screen and (max-width: 640px) {
+    .card-car {
+      width: 100%;
+      padding: 3rem;
+      margin-bottom: 2rem; } }
+  .card-car .card-car-title {
+    display: flex;
+    justify-content: space-between; }
+  .card-car .car-brand {
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: black; }
+    @media only screen and (max-width: 640px) {
+      .card-car .car-brand {
+        font-size: 2rem; } }
+  .card-car .car-model {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #7f7f7f; }
+    @media only screen and (max-width: 640px) {
+      .card-car .car-model {
+        font-size: 1.8rem; } }
+  .card-car .car-rating {
+    padding: 0.7rem 0.4rem;
+    border-radius: 5px;
+    background-color: #f1eade;
+    font-size: 1rem;
+    letter-spacing: 0.03rem; }
+    .card-car .car-rating :first-child {
+      text-decoration: underline; }
+    .card-car .car-rating .car-rating-value {
+      margin-top: 4px;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600; }
+  .card-car .car-img img {
+    width: 80%;
+    margin: auto; }
+    @media only screen and (max-width: 1138px) {
+      .card-car .car-img img {
+        width: 26rem;
+        height: 17rem; } }
+  .card-car .card-car-description {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-top: 0.8rem; }
+    @media only screen and (max-width: 640px) {
+      .card-car .card-car-description {
+        font-size: 1.8rem; } }
+  .card-car .card-car-description-sum {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 1.6rem; }
+    @media only screen and (max-width: 640px) {
+      .card-car .card-car-description-sum {
+        font-size: 1.8rem; } }
+    .card-car .card-car-description-sum span {
+      color: #d0021b; }
+  .card-car .card-car-description-offer {
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 300; }
+    @media only screen and (max-width: 640px) {
+      .card-car .card-car-description-offer {
+        font-size: 1.6rem; } }
+
+.section-brands-logos {
+  margin: 3.3rem 10rem 0 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 800px) {
+    .section-brands-logos {
+      justify-content: space-around;
+      margin: 2rem; } }
+  .section-brands-logos .brand-logo-bmw {
+    width: 11.4rem; }
+  .section-brands-logos .brand-logo-ford {
+    width: 15rem; }
+  .section-brands-logos .brand-logo-subaru {
+    width: 23.6rem; }
+  .section-brands-logos .brand-logo-renault {
+    width: 12rem; }
+  .section-brands-logos .brand-logo-toyota {
+    width: 12rem; }
+
+.section-month-offer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(public/assets/best-offer-img.png); }
+  @media only screen and (max-width: 1440px) and (min-width: 1300px) {
+    .section-month-offer {
+      background-size: 100%; } }
+
+.section-month-offer-header {
+  display: flex;
+  height: auto;
+  margin-top: 4rem;
+  padding: 1.4rem 0 2rem 9.7rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff; }
+  @media only screen and (max-width: 640px) {
+    .section-month-offer-header {
+      padding: 4rem 0 4rem 9rem; } }
+
+.section-month-offer-title h5 {
+  margin-bottom: 0.2rem; }
+  @media only screen and (max-width: 640px) {
+    .section-month-offer-title h5 {
+      margin-bottom: 0.5rem; } }
+
+.section-month-offer-title p {
+  font-size: 2rem; }
+
+.section-month-offer-title .card-car {
+  height: auto; }
+
+.car-rating {
+  margin-left: 4.5rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  padding: 0.7rem 0.7rem;
+  border-radius: 5px;
+  background-color: #f1eade;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  color: black; }
+  @media only screen and (max-width: 640px) {
+    .car-rating {
+      font-size: 1.5rem; } }
+  .car-rating :first-child {
+    text-decoration: underline; }
+  .car-rating .car-rating-value {
+    margin-top: 4px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600; }
+    @media only screen and (max-width: 640px) {
+      .car-rating .car-rating-value {
+        font-size: 2rem; } }
+
+.section-month-offer-description {
+  width: 30.8rem;
+  height: 13rem;
+  margin: 6.7rem 0 2rem 10.7rem;
+  padding: 2rem; }
+  @media only screen and (max-width: 640px) {
+    .section-month-offer-description {
+      width: 80%;
+      margin: 6.7rem 0 2rem 6.7rem; } }
+
+.btn-offer {
+  width: 30.8rem;
+  height: 4.2rem;
+  background-color: #fa454b;
+  margin: 2rem 0 10rem 10.7rem; }
+  @media only screen and (max-width: 640px) {
+    .btn-offer {
+      width: 80%;
+      margin: 3rem 0 2rem 6.7rem; } }
+
+.section-top-offers {
+  padding: 6rem 20rem 8rem 30rem; }
+  @media only screen and (max-width: 1400px) {
+    .section-top-offers {
+      padding: 8.2rem 10rem 8rem 10rem; } }
+  .section-top-offers h5 {
+    margin-bottom: 2rem; }
+  .section-top-offers .section-top-offers-description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.4rem; }
+  .section-top-offers .check {
+    display: flex;
+    justify-content: flex-start; }
+  .section-top-offers .car-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-top: 20px; }
+    @media only screen and (max-width: 1200px) {
+      .section-top-offers .car-name {
+        font-size: 1.8rem;
+        padding-top: 30px; } }
+    @media only screen and (max-width: 480px) {
+      .section-top-offers .car-name {
+        font-size: 1.5rem;
+        padding-top: 20px; } }
+  .section-top-offers .line {
+    width: 50%;
+    border-bottom: 2px solid #9013fe;
+    position: relative;
+    top: -5px; }
+    @media only screen and (max-width: 1200px) {
+      .section-top-offers .line {
+        top: 0; } }
+    @media only screen and (max-width: 800px) {
+      .section-top-offers .line {
+        display: none; } }
+  .section-top-offers .text-submit {
+    margin: 9.6rem 0 4.2rem 0; }
+
+.car-rating-top {
+  width: 7.7rem;
+  height: 4rem;
+  margin: 0 1.2rem 0 1.2rem;
+  padding: 1.2rem;
+  background-color: #f1eade;
+  letter-spacing: 0.03rem; }
+  @media only screen and (max-width: 1200px) {
+    .car-rating-top {
+      margin-top: 20px; } }
+  .car-rating-top .car-rating-value-top {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600; }
+
+.btn-check-offer {
+  width: 13.7rem;
+  height: 4rem;
+  background-color: #3bb273;
+  border: solid 1px #979797;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: 0.05rem; }
+  @media only screen and (max-width: 1200px) {
+    .btn-check-offer {
+      margin-top: 20px; } }
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px; }
+  @media only screen and (max-width: 1060px) {
+    html {
+      font-size: 8px; } }
+  @media only screen and (max-width: 640px) {
+    html {
+      font-size: 7px; } }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0; }
+
+section, div, header, footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+hr {
+  padding: 0;
+  margin-bottom: 2rem; }
+
+p, h3, h5, h6 {
+  margin: 0; }
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 600; }
+
+h5 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5; }
+
+h6 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5; }
+
+.text-center {
+  text-align: center; }
+
+button {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif; }
+
+
+/*# sourceMappingURL=bundle.css.map*/
