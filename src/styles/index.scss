@@ -3,6 +3,7 @@
 @import 'section-hero';
 @import 'section-cars';
 @import 'section-m-offer';
+@import 'section-top-offers';
 
 html {
   margin: 0;
@@ -79,95 +80,4 @@ button {
   color: $white;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-}
-
-.section-top-offers {
-  padding: 6rem 20rem 8rem 30rem;
-
-  @media only screen and (max-width: 1400px) {
-    padding: 8.2rem 10rem 8rem 10rem;
-  }
-
-  h5 {
-    margin-bottom: 2rem;
-  }
-
-  .section-top-offers-description {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2.4rem;
-  }
-
-  .check {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .car-name {
-    font-size: 1.6rem;
-    font-weight: 500;
-    padding-top: 20px;
-
-    @media only screen and (max-width: 1200px) {
-      font-size: 1.8rem;
-      padding-top: 30px;
-    }
-    @media only screen and (max-width: 480px) {
-      font-size: 1.5rem;
-      padding-top: 20px;
-    }
-  }
-
-  .line {
-    width: 50%;
-    border-bottom: 2px solid #9013fe;
-    position: relative;
-    top: -5px;
-
-    @media only screen and (max-width: 1200px) {
-      top: 0;
-    }
-
-    @media only screen and (max-width: 800px) {
-      display: none;
-    }
-  }
-
-  .text-submit {
-    margin: 9.6rem 0 4.2rem 0;
-  }
-}
-
-.car-rating-top {
-  width: 7.7rem;
-  height: 4rem;
-  margin: 0 1.2rem 0 1.2rem;
-  padding: 1.2rem;
-  background-color: #f1eade;
-  letter-spacing: 0.03rem;
-
-  @media only screen and (max-width: 1200px) {
-    margin-top: 20px;
-  }
-
-  .car-rating-value-top {
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 600;
-  }
-}
-
-.btn-check-offer {
-  width: 13.7rem;
-  height: 4rem;
-  background-color: #3bb273;
-  border: solid 1px #979797;
-  font-size: 1.6rem;
-  font-weight: 300;
-  text-transform: none;
-  letter-spacing: 0.05rem;
-
-  @media only screen and (max-width: 1200px) {
-    margin-top: 20px;
-  }
 }

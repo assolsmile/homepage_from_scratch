@@ -39,6 +39,7 @@ header {
   .dropdown-profile {
     position: relative;
     display: inline-block;
+    cursor: pointer;
   }
 
   .basket {
@@ -107,9 +108,9 @@ header {
         }
       }
     }
-
-    .dropdown-profile:hover .dropdown-profile-content {
-      display: block;
-    }
   }
+}
+
+.dropdown-profile-content-show{
+  display: block !important;
 }

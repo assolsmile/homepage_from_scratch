@@ -25,11 +25,11 @@
         <img src="../public/assets/basket.png" alt="basket">
     </div>
     <div class="profile">
-        <div class="dropdown-profile">
+        <div class="dropdown-profile"  id="clickMenu">
             <img src="../public/assets/user.png" alt="profile">
             <span class="dropdown-profile-name">Your account</span>
             <i class="fas fa-chevron-down"></i>
-            <div class="dropdown-profile-content">
+            <div class="dropdown-profile-content" id="account">
                 <ul>
                     <li class="nav-item"><a href="#">Special offers</a></li>
                     <li class="nav-item"><a href="#">Browse vehicles</a></li>
@@ -334,41 +334,5 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('.responsive').slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      responsive: [
-        {
-          breakpoint: 1457,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: false,
-          }
-        },
-        {
-          breakpoint: 900,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
-  });
-</script>
 </body>
 </html>
