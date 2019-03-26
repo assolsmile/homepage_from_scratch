@@ -6,7 +6,7 @@ header {
   background-color: #ffffff;
   font-weight: 600;
   font-size: 1.8rem;
-  color: black;
+  color: #000;
   line-height: 1;
   letter-spacing: 0.02rem; }
   @media only screen and (max-width: 900px) {
@@ -19,7 +19,7 @@ header {
     margin-left: auto; }
     header nav a {
       padding-right: 2rem;
-      color: black; }
+      color: #000; }
     @media only screen and (max-width: 640px) {
       header nav {
         display: none; } }
@@ -33,12 +33,8 @@ header {
     @media only screen and (max-width: 640px) {
       header .basket {
         margin-left: auto; } }
-    header .basket img {
-      width: 2.3rem; }
-  header .profile img {
-    padding-left: 2.4rem;
-    padding-right: 1rem;
-    width: 1.9rem; }
+  header .profile svg {
+    margin-left: 2.4rem; }
   @media only screen and (max-width: 640px) {
     header .profile .dropdown-profile-name, header .profile i {
       display: none; } }
@@ -66,7 +62,7 @@ header {
       padding-bottom: 1.5rem;
       font-weight: 300; }
       header .profile .dropdown-profile-content li a {
-        color: black; }
+        color: #000; }
       header .profile .dropdown-profile-content li a:hover {
         text-shadow: 0.3px 0.3px black; }
 
@@ -75,16 +71,12 @@ header {
 
 .section-hero {
   height: 460px;
-  border: 1px solid black;
+  border: 1px solid #000;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(public/assets/hero-img.png); }
   .section-hero .section-hero-title {
-    margin-left: 9.7rem;
     margin-top: 10.5rem; }
-    @media only screen and (max-width: 640px) {
-      .section-hero .section-hero-title {
-        margin-left: 0; } }
     .section-hero .section-hero-title h1 {
       font-size: 4rem;
       color: #fff;
@@ -93,10 +85,6 @@ header {
       line-height: 1.2;
       letter-spacing: 0.1rem;
       margin-bottom: 5rem; }
-      @media only screen and (max-width: 640px) {
-        .section-hero .section-hero-title h1 {
-          margin-left: 2rem;
-          margin-right: 2rem; } }
     .section-hero .section-hero-title p {
       font-size: 2rem;
       color: #fff;
@@ -107,6 +95,10 @@ header {
       .section-hero .section-hero-title p span {
         color: #fa4d53;
         font-weight: 600; }
+        @media only screen and (max-width: 640px) {
+          .section-hero .section-hero-title p span {
+            margin-left: 2rem;
+            margin-right: 2rem; } }
     .section-hero .section-hero-title button {
       width: 29.5rem;
       height: 4.2rem; }
@@ -125,37 +117,33 @@ header {
         text-align: center; } }
 
 .section-title {
+  display: -webkit-flex;
   display: flex;
   margin-top: 4.9rem;
-  margin-left: 10rem; }
+  margin-bottom: 3.2rem; }
 
-.section-cars .section-title img {
-  width: 2.5rem;
-  height: 3.2rem;
-  margin-right: 2rem; }
-
-.section-cars-cards {
-  padding: 3.2rem 8rem 0 10rem; }
+.section-cars h6 {
+  margin-left: 2rem; }
 
 .slick-prev {
   width: 5rem;
   height: 5rem;
-  left: 40px;
+  left: -60px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff; }
-  @media only screen and (max-width: 1060px) {
+  @media only screen and (max-width: 640px) {
     .slick-prev {
-      left: 25px; } }
+      left: -32px; } }
 
 .slick-next {
   width: 5rem;
   height: 5rem;
-  right: 50px;
+  right: -30px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff; }
-  @media only screen and (max-width: 1060px) {
+  @media only screen and (max-width: 400px) {
     .slick-next {
-      right: 30px; } }
+      right: -35px; } }
 
 .slick-prev:before {
   content: "\2329";
@@ -179,7 +167,11 @@ header {
     .card-car {
       width: 100%;
       padding: 3rem;
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem;
+      margin-right: 1rem; } }
+  @media only screen and (max-width: 400px) {
+    .card-car {
+      margin-right: 0; } }
   .card-car .card-car-title {
     display: flex;
     justify-content: space-between; }
@@ -187,7 +179,7 @@ header {
     margin-bottom: 0.8rem;
     font-size: 1.8rem;
     font-weight: 500;
-    color: black; }
+    color: #000; }
     @media only screen and (max-width: 640px) {
       .card-car .car-brand {
         font-size: 2rem; } }
@@ -198,19 +190,6 @@ header {
     @media only screen and (max-width: 640px) {
       .card-car .car-model {
         font-size: 1.8rem; } }
-  .card-car .car-rating {
-    padding: 0.7rem 0.4rem;
-    border-radius: 5px;
-    background-color: #f1eade;
-    font-size: 1rem;
-    letter-spacing: 0.03rem; }
-    .card-car .car-rating :first-child {
-      text-decoration: underline; }
-    .card-car .car-rating .car-rating-value {
-      margin-top: 4px;
-      text-align: center;
-      font-size: 1.6rem;
-      font-weight: 600; }
   .card-car .car-img img {
     width: 80%;
     margin: auto; }
@@ -246,8 +225,22 @@ header {
       .card-car .card-car-description-offer {
         font-size: 1.6rem; } }
 
+.car-rating {
+  padding: 0.7rem 0.4rem;
+  border-radius: 5px;
+  background-color: #f1eade;
+  font-size: 1rem;
+  letter-spacing: 0.03rem; }
+  .car-rating :first-child {
+    text-decoration: underline; }
+  .car-rating .car-rating-value {
+    margin-top: 4px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600; }
+
 .section-brands-logos {
-  margin: 3.3rem 10rem 0 10rem;
+  margin-top: 3.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -256,15 +249,17 @@ header {
     .section-brands-logos {
       justify-content: space-around;
       margin: 2rem; } }
-  .section-brands-logos .brand-logo-bmw {
+  .section-brands-logos .logo-cars {
+    margin-bottom: 2rem; }
+  .section-brands-logos .bmw {
     width: 11.4rem; }
-  .section-brands-logos .brand-logo-ford {
+  .section-brands-logos .ford {
     width: 15rem; }
-  .section-brands-logos .brand-logo-subaru {
+  .section-brands-logos .subaru {
     width: 23.6rem; }
-  .section-brands-logos .brand-logo-renault {
+  .section-brands-logos .renault {
     width: 12rem; }
-  .section-brands-logos .brand-logo-toyota {
+  .section-brands-logos .toyota {
     width: 12rem; }
 
 .section-month-offer {
@@ -279,12 +274,15 @@ header {
   display: flex;
   height: auto;
   margin-top: 4rem;
-  padding: 1.4rem 0 2rem 9.7rem;
+  padding: 1.4rem 0 3rem 9.7rem;
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff; }
+  @media only screen and (min-width: 1300px) {
+    .section-month-offer-header {
+      padding: 3rem 0 4rem 9.7rem; } }
   @media only screen and (max-width: 640px) {
     .section-month-offer-header {
-      padding: 4rem 0 4rem 9rem; } }
+      padding: 5rem; } }
 
 .section-month-offer-title h5 {
   margin-bottom: 0.2rem; }
@@ -298,29 +296,21 @@ header {
 .section-month-offer-title .card-car {
   height: auto; }
 
-.car-rating {
+.rating-m-offer {
   margin-left: 4.5rem;
   margin-top: 0.7rem;
-  margin-bottom: 0.7rem;
   padding: 0.7rem 0.7rem;
-  border-radius: 5px;
-  background-color: #f1eade;
-  font-size: 1rem;
-  letter-spacing: 0.03rem;
   color: black; }
   @media only screen and (max-width: 640px) {
-    .car-rating {
+    .rating-m-offer {
       font-size: 1.5rem; } }
-  .car-rating :first-child {
-    text-decoration: underline; }
-  .car-rating .car-rating-value {
-    margin-top: 4px;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 600; }
-    @media only screen and (max-width: 640px) {
-      .car-rating .car-rating-value {
-        font-size: 2rem; } }
+  @media only screen and (max-width: 640px) {
+    .rating-m-offer .rating-value {
+      font-size: 2rem; } }
+
+@media only screen and (max-width: 400px) {
+  .height-mobile {
+    height: 50px; } }
 
 .section-month-offer-description {
   width: 30.8rem;
@@ -330,7 +320,7 @@ header {
   @media only screen and (max-width: 640px) {
     .section-month-offer-description {
       width: 80%;
-      margin: 6.7rem 0 2rem 6.7rem; } }
+      margin: 2rem 5rem; } }
 
 .btn-offer {
   width: 30.8rem;
@@ -340,45 +330,35 @@ header {
   @media only screen and (max-width: 640px) {
     .btn-offer {
       width: 80%;
-      margin: 3rem 0 2rem 6.7rem; } }
+      margin: 2rem 5rem; } }
 
 .section-top-offers {
-  padding: 6rem 20rem 8rem 30rem; }
-  @media only screen and (max-width: 1400px) {
+  padding-left: 10rem;
+  padding-right: 10rem; }
+  @media only screen and (max-width: 900px) {
     .section-top-offers {
-      padding: 8.2rem 10rem 8rem 10rem; } }
+      padding-left: 0;
+      padding-right: 0; } }
   .section-top-offers h5 {
+    margin-top: 5rem;
     margin-bottom: 2rem; }
   .section-top-offers .section-top-offers-description {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     margin-bottom: 2.4rem; }
   .section-top-offers .check {
     display: flex;
     justify-content: flex-start; }
   .section-top-offers .car-name {
     font-size: 1.6rem;
-    font-weight: 500;
-    padding-top: 20px; }
+    font-weight: 500; }
     @media only screen and (max-width: 1200px) {
       .section-top-offers .car-name {
-        font-size: 1.8rem;
-        padding-top: 30px; } }
-    @media only screen and (max-width: 480px) {
-      .section-top-offers .car-name {
-        font-size: 1.5rem;
-        padding-top: 20px; } }
+        font-size: 1.8rem; } }
   .section-top-offers .line {
     width: 50%;
-    border-bottom: 2px solid #9013fe;
-    position: relative;
-    top: -5px; }
-    @media only screen and (max-width: 1200px) {
-      .section-top-offers .line {
-        top: 0; } }
-    @media only screen and (max-width: 800px) {
-      .section-top-offers .line {
-        display: none; } }
+    border-bottom: 2px solid #9013fe; }
   .section-top-offers .text-submit {
     margin: 9.6rem 0 4.2rem 0; }
 
@@ -463,6 +443,14 @@ h6 {
 .text-center {
   text-align: center; }
 
+.section {
+  padding-left: 9.7rem;
+  padding-right: 9.7rem; }
+  @media only screen and (max-width: 640px) {
+    .section {
+      padding-left: 5rem;
+      padding-right: 5rem; } }
+
 button {
   font-size: 1.4rem;
   font-weight: 500;
@@ -471,7 +459,8 @@ button {
   border: none;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer; }
 
 
 /*# sourceMappingURL=bundle.css.map*/
