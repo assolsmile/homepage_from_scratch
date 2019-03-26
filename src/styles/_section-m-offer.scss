@@ -14,12 +14,16 @@
   display: flex;
   height: auto;
   margin-top: 4rem;
-  padding: 1.4rem 0 2rem 9.7rem;
+  padding: 1.4rem 0 3rem 9.7rem;
   background-color: rgba(0, 0, 0, 0.9);
   color: $white;
 
+  @media only screen and (min-width: 1300px){
+    padding: 3rem 0 4rem 9.7rem;
+  }
+
   @media only screen and (max-width: 640px) {
-    padding: 4rem 0 4rem 9rem;
+    padding: 5rem;
   }
 }
 
@@ -41,33 +45,25 @@
 
 }
 
-.car-rating {
+.rating-m-offer{
   margin-left: 4.5rem;
   margin-top: 0.7rem;
-  margin-bottom: 0.7rem;
   padding: 0.7rem 0.7rem;
-  border-radius: 5px;
-  background-color: #f1eade;
-  font-size: 1rem;
-  letter-spacing: 0.03rem;
   color: black;
 
   @media only screen and (max-width: 640px) {
     font-size: 1.5rem;
   }
 
-  :first-child {
-    text-decoration: underline;
-  }
-
-  .car-rating-value {
-    margin-top: 4px;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 600;
+  .rating-value {
     @media only screen and (max-width: 640px) {
       font-size: 2rem;
     }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .height-mobile{
+    height: 50px;
   }
 }
 
@@ -79,7 +75,7 @@
 
   @media only screen and (max-width: 640px) {
     width: 80%;
-    margin: 6.7rem 0 2rem 6.7rem;
+    margin: 2rem 5rem;
   }
 }
 
@@ -91,6 +87,6 @@
 
   @media only screen and (max-width: 640px) {
     width: 80%;
-    margin: 3rem 0 2rem 6.7rem;
+    margin: 2rem 5rem;
   }
 }

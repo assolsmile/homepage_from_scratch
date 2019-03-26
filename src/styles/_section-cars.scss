@@ -1,9 +1,14 @@
 @import 'variables';
 
-.section-title {
+@mixin flex {
+  display: -webkit-flex;
   display: flex;
+}
+
+.section-title {
+  @include flex;
   margin-top: 4.9rem;
-  margin-left: 10rem;
+  margin-bottom: 3.2rem;
 }
 
 
@@ -13,38 +18,30 @@
 
 
 .section-cars {
-  .section-title {
-    img {
-      width: 2.5rem;
-      height: 3.2rem;
-      margin-right: 2rem;
-    }
+  h6 {
+    margin-left: 2rem;
   }
-}
-
-.section-cars-cards {
-  padding: 3.2rem 8rem 0 10rem;
 }
 
 .slick-prev {
   width: 5rem;
   height: 5rem;
-  left: 40px;
+  left: -60px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  @media only screen and (max-width: 1060px) {
-    left: 25px;
+  @media only screen and (max-width: 640px) {
+    left: -32px;
   }
 }
 
 .slick-next {
   width: 5rem;
   height: 5rem;
-  right: 50px;
+  right: -30px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  @media only screen and (max-width: 1060px) {
-    right: 30px;
+  @media only screen and (max-width: 400px) {
+    right: -35px;;
   }
 }
 
@@ -74,6 +71,11 @@
     width: 100%;
     padding: 3rem;
     margin-bottom: 2rem;
+    margin-right: 1rem;
+  }
+
+  @media only screen and (max-width: 400px) {
+    margin-right: 0;
   }
 
   .card-car-title {
@@ -100,29 +102,9 @@
     }
   }
 
-  .car-rating {
-    padding: 0.7rem 0.4rem;
-    border-radius: 5px;
-    background-color: #f1eade;
-    font-size: 1rem;
-    letter-spacing: 0.03rem;
-
-    :first-child {
-      text-decoration: underline;
-    }
-
-    .car-rating-value {
-      margin-top: 4px;
-      text-align: center;
-      font-size: 1.6rem;
-      font-weight: 600;
-    }
-  }
-
   .car-img {
     img {
       width: 80%;
-      //height: 17.9rem;
       margin: auto;
       @media only screen and (max-width: 1138px) {
         width: 26rem;
@@ -167,6 +149,25 @@
   }
 }
 
+.car-rating {
+  padding: 0.7rem 0.4rem;
+  border-radius: 5px;
+  background-color: #f1eade;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+
+  :first-child {
+    text-decoration: underline;
+  }
+
+  .car-rating-value {
+    margin-top: 4px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}
+
 
 //
 // Section-brands-logos
@@ -174,34 +175,37 @@
 
 
 .section-brands-logos {
-  margin: 3.3rem 10rem 0 10rem;
+  margin-top: 3.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
   @media only screen and (max-width: 800px) {
     justify-content: space-around;
     margin: 2rem;
   }
 
-  .brand-logo-bmw {
+  .logo-cars{
+    margin-bottom: 2rem;
+  }
+
+  .bmw {
     width: 11.4rem;
   }
 
-  .brand-logo-ford {
+  .ford {
     width: 15rem;
   }
 
-  .brand-logo-subaru {
+  .subaru {
     width: 23.6rem;
   }
 
-  .brand-logo-renault {
+  .renault {
     width: 12rem;
   }
 
-  .brand-logo-toyota {
+  .toyota {
     width: 12rem;
   }
 

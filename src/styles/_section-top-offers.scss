@@ -1,58 +1,45 @@
 @import 'variables';
 
 .section-top-offers {
-  padding: 6rem 20rem 8rem 30rem;
 
-@media only screen and (max-width: 1400px) {
-    padding: 8.2rem 10rem 8rem 10rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  @media only screen and (max-width: 900px) {
+    padding-left: 0;
+    padding-right: 0;
   }
-
   h5 {
+    margin-top: 5rem;
     margin-bottom: 2rem;
   }
 
-.section-top-offers-description {
+  .section-top-offers-description {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     margin-bottom: 2.4rem;
   }
 
-.check {
+  .check {
     display: flex;
     justify-content: flex-start;
   }
 
-.car-name {
+  .car-name {
     font-size: 1.6rem;
     font-weight: 500;
-    padding-top: 20px;
 
-  @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
       font-size: 1.8rem;
-      padding-top: 30px;
-    }
-  @media only screen and (max-width: 480px) {
-      font-size: 1.5rem;
-      padding-top: 20px;
     }
   }
 
-.line {
+  .line {
     width: 50%;
     border-bottom: 2px solid #9013fe;
-    position: relative;
-    top: -5px;
-
-  @media only screen and (max-width: 1200px) {
-      top: 0;
-    }
-
-  @media only screen and (max-width: 800px) {
-      display: none;
-    }
   }
 
-.text-submit {
+  .text-submit {
     margin: 9.6rem 0 4.2rem 0;
   }
 }
@@ -65,11 +52,11 @@
   background-color: #f1eade;
   letter-spacing: 0.03rem;
 
-@media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1200px) {
     margin-top: 20px;
   }
 
-.car-rating-value-top {
+  .car-rating-value-top {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
@@ -86,7 +73,7 @@
   text-transform: none;
   letter-spacing: 0.05rem;
 
-@media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1200px) {
     margin-top: 20px;
   }
 }
